@@ -48,7 +48,7 @@ html {
 }
 
 body {
-  background-image: url("./pics/trianglify.svg");
+  background-image: url("./pics/trianglify2.svg");
   background-repeat: no-repeat;
   background-size: cover; 
 }
@@ -62,7 +62,7 @@ body {
 #root {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 10fr 85fr 5fr;
+  grid-template-rows: 1fr 10fr 1fr;
   min-height: 100vh; 
 }
 
