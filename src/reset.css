@@ -1,0 +1,77 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+select, span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+body {
+  background-image: url("./pics/trianglify.svg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 10fr 85fr 5fr;
+  min-height: 100vh; 
+}
+
+:root {
+  --color-purple: #991bb5;
+  --color-yellow: #f7f303;
+}
+
+.hide {
+  display: none;
+}
+
