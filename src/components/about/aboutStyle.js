@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const AboutDiv = styled.div`
   grid-area: 2 / 2 / 3 / 3;
-  display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: rgba(255, 255, 255, 0.2);

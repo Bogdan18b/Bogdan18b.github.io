@@ -10,11 +10,11 @@ const App = () => {
   let [projectsClass, setProjectsClass] = React.useState('hide');
   let [aboutClass, setAboutClass] = React.useState('hide');
   const showAbout = () => {
-    setAboutClass('show');
+    setAboutClass('flex');
     setProjectsClass('hide');
   };
   const showProjects = () => {
-    setProjectsClass('show');
+    setProjectsClass('');
     setAboutClass('hide');
   };
   return (
