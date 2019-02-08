@@ -14,7 +14,7 @@ const App = () => {
     setProjectsClass('hide');
   };
   const showProjects = () => {
-    setProjectsClass('');
+    setProjectsClass('flex');
     setAboutClass('hide');
   };
   return (

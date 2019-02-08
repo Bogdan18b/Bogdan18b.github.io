@@ -30,7 +30,7 @@ class Title extends Component {
       <MainDiv ref={this.titleRef}>
         <Typist className="middle"
         >
-          <h1>BOGDAN BOBLETEC</h1>
+          <h1 onClick={() => document.location.reload()}>BOGDAN BOBLETEC</h1>
           <br />
           <h2>software developer from New York City</h2>
           <div>
