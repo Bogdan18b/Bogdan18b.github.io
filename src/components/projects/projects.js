@@ -1,11 +1,10 @@
 import React from 'react';
 import "./slider.css";
-import ProjectList from './projectStyle';
+import { ProjectList, ProjectDiv } from './projectStyle';
 import ike_pic from "../../pics/ike.png";
 import button_pic from "../../pics/button.png";
 import weather_pic from "../../pics/weather.png";
 import piata_pic from "../../pics/piata.png";
-import Slider from 'react-animated-slider';
 
 const PROJECTS = [
   {
@@ -60,18 +59,18 @@ const PROJECTS = [
 ];
 
 const Projects = ({ className }) => (
-  <Slider className={`slider ${className}`}>
+  <ProjectDiv className={className}>
     {
       PROJECTS.map(project => <ProjectList key={project.title}>
         <li className="project-title">
           <a href={project.link}>{project.title}</a>
+          <span>
+            <a href={project.github}>
+              <p className="fab fa-github"></p>
+            </a>
+          </span>
         </li>
         <li>{project.description}</li>
-        <li className="project-github">
-          <a href={project.github}>
-            <p className="fab fa-github"></p>
-          </a>
-        </li>
         <li>
           <a href={project.link}>
             <img src={project.url} alt="pic" />
@@ -79,7 +78,7 @@ const Projects = ({ className }) => (
         </li>
       </ProjectList>)
     }
-  </Slider>
+  </ProjectDiv>
 );
 
 export default Projects;

@@ -4,7 +4,7 @@ const MainDiv = styled.div`
   display: flex;
   font-weight: 900;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   grid-column: 2 / 3;
   grid-row: 2 /3;
   font-size: 4rem;
@@ -14,6 +14,9 @@ const MainDiv = styled.div`
     flex-direction: column;
     color: var(--color-purple);
     text-align: center;
+    h1 {
+      cursor: pointer;
+    }
     h2 {
       margin-bottom: 1em;
     }
