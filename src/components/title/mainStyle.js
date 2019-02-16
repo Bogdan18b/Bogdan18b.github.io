@@ -12,7 +12,7 @@ const MainDiv = styled.div`
   .middle {
     display: flex;
     flex-direction: column;
-    color: var(--color-purple);
+    color: var(--color-yellow);
     text-align: center;
     h1 {
       cursor: pointer;
@@ -21,7 +21,7 @@ const MainDiv = styled.div`
       margin-bottom: 1em;
     }
     div {
-      color: var(--color-yellow);
+      color: var(--color-purple);
       margin-left: 100px;
       @media(max-width: 400px) {
         margin-left: 0;
